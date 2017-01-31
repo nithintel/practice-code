@@ -6,19 +6,21 @@
 
 <body>
 
-<div id="app">
-  {{ message }}
+<div id="app-2">
+  <span v-bind:title="message">
+    hover mouse to display date
+  </span>
 </div>
 
 
 
 <script type="text/javascript">
 var app = new Vue({
-  el: '#app',
+  el: '#app-2',
   data: {
-    message: 'Hello Vue!'
+    message: 'you load page' + new Date()
   }
-})s
+})
 
 
 
